@@ -123,3 +123,7 @@ body {
     transition: 0.5s;
     background-color: transparent;
 }
+
+.nav_black {
+    background-color: #111;
+}

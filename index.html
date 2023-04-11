@@ -11,7 +11,7 @@
 
     <body>
         <!-- navigator -->
-        <div class="nav">
+        <div class="nav" id="nav">
             <img src="Img/netflix-logo.png" alt="" class="nav_logo">
             <img src="Img/netflix-avatar.png" alt="" class="nav_avartar">
 
@@ -23,7 +23,9 @@
                 <h1 class="ban_title">종이의 집</h1>
                 <div class="ban_buttons">
                     <button class="ban_button">재생</button>
+                
                     <button class="ban_button">상세 정보</button>
+            
                 </div>
 
                 <div class="ban_description">
@@ -134,6 +136,19 @@
                 <img src="Img/small-movie2.jpg" alt="" class="poster_image">
             </div>
         </div>
+
+        <script>
+            const nav = document.getElementById('nav');
+
+            window.addEventListener('scroll', () => {
+                if(window.scrollY >= 100) {
+                    nav.classList.add('nav_black')
+                }
+                else {
+                    nav.classList.remove('nav_black')
+                }
+            })
+        </script>
 
     </body>
 </html>
